@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # ==========================================================================
-# Script Name: uninstall.sh (DebiOmid)
-# Description: Removes DebiOmid Farsi Localization from Debian 13 (Trixie)
+# Script Name: uninstall.sh (DebianOmid)
+# Description: Removes DebianOmid Farsi Localization from Debian 13 (Trixie)
 # GitHub:      github.com/delejos/DebianOmid
 # Author:      delejos
 # ==========================================================================
@@ -19,10 +19,10 @@ REAL_USER="${SUDO_USER:-$USER}"
 REAL_HOME=$(getent passwd "$REAL_USER" | cut -d: -f6)
 
 echo "-----------------------------------------------------------"
-echo "🗑️  DebiOmid Uninstaller"
+echo "🗑️  DebianOmid Uninstaller"
 echo "   This will remove the Farsi localization packages and"
-echo "   configuration files installed by DebiOmid."
-echo "   این عملیات بسته‌ها و تنظیمات فارسی‌سازی DebiOmid را حذف می‌کند."
+echo "   configuration files installed by DebianOmid."
+echo "   این عملیات بسته‌ها و تنظیمات فارسی‌سازی DebianOmid را حذف می‌کند."
 echo "-----------------------------------------------------------"
 read -r -p "Are you sure you want to continue? (y/N): " confirm
 [[ "$confirm" =~ ^[Yy]$ ]] || { echo "Aborted."; exit 0; }
@@ -52,9 +52,9 @@ apt-get autoremove -y
 # ---------------------------------------------------------------------------
 # Remove profile.d environment files
 # ---------------------------------------------------------------------------
-echo "🧹 Removing DebiOmid environment files..."
-rm -f /etc/profile.d/debiomid_ime.sh
-rm -f /etc/profile.d/debiomid_terminal.sh
+echo "🧹 Removing DebianOmid environment files..."
+rm -f /etc/profile.d/debianomid_ime.sh
+rm -f /etc/profile.d/debianomid_terminal.sh
 echo "✅ Environment files removed."
 
 # ---------------------------------------------------------------------------
@@ -74,16 +74,16 @@ fi
 # ---------------------------------------------------------------------------
 # Remove install log (optional)
 # ---------------------------------------------------------------------------
-if [ -f /var/log/debiomid-install.log ]; then
-    read -r -p "Remove install log (/var/log/debiomid-install.log)? (y/N): " remove_log
+if [ -f /var/log/debianomid-install.log ]; then
+    read -r -p "Remove install log (/var/log/debianomid-install.log)? (y/N): " remove_log
     if [[ "$remove_log" =~ ^[Yy]$ ]]; then
-        rm -f /var/log/debiomid-install.log
+        rm -f /var/log/debianomid-install.log
         echo "✅ Install log removed."
     fi
 fi
 
 echo ""
 echo "-----------------------------------------------------------"
-echo "✅ DebiOmid has been removed. Please restart your system."
+echo "✅ DebianOmid has been removed. Please restart your system."
 echo "   حذف انجام شد. لطفاً سیستم را ری‌استارت کنید."
 echo "-----------------------------------------------------------"

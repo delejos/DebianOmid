@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==========================================================================
-# Script Name: setup.sh (DebiOmid)
+# Script Name: setup.sh (DebianOmid)
 # Description: Professional Farsi Localization for Debian 13 (Trixie)
 # GitHub:      github.com/delejos/DebianOmid
 # Author:      delejos
@@ -10,7 +10,7 @@
 
 set -euo pipefail
 
-LOG_FILE="/var/log/debiomid-install.log"
+LOG_FILE="/var/log/debianomid-install.log"
 exec > >(tee -a "$LOG_FILE") 2>&1
 
 # Cleanup/error trap
@@ -58,7 +58,7 @@ REAL_USER="${SUDO_USER:-$USER}"
 REAL_HOME=$(getent passwd "$REAL_USER" | cut -d: -f6)
 
 echo "-----------------------------------------------------------"
-echo "🌟 Starting DebiOmid: Farsi Localization for Debian 13 🌟"
+echo "🌟 Starting DebianOmid: Farsi Localization for Debian 13 🌟"
 echo "   Installing for user : $REAL_USER"
 echo "   Log file            : $LOG_FILE"
 echo "-----------------------------------------------------------"
@@ -95,7 +95,7 @@ apt-get install -y fcitx5 fcitx5-m17n fcitx5-config-qt fcitx5-frontend-gtk3 fcit
 
 # Write IME environment variables to a dedicated profile.d file so we never
 # clobber any existing content in /etc/environment.
-IME_ENV_FILE="/etc/profile.d/debiomid_ime.sh"
+IME_ENV_FILE="/etc/profile.d/debianomid_ime.sh"
 cat > "$IME_ENV_FILE" << 'EOF'
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
@@ -176,7 +176,7 @@ apt-get install -y firefox-esr-l10n-fa libreoffice-l10n-fa
 # 9. Terminal RTL optimisation
 # ---------------------------------------------------------------------------
 echo "💻 [7/7] Optimising terminal for RTL text rendering..."
-RTL_ENV_FILE="/etc/profile.d/debiomid_terminal.sh"
+RTL_ENV_FILE="/etc/profile.d/debianomid_terminal.sh"
 cat > "$RTL_ENV_FILE" << 'EOF'
 export VTE_CJK_WIDTH=1
 EOF

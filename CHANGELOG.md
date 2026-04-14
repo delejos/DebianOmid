@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to DebiOmid are documented here.
+All notable changes to DebianOmid are documented here.
 
 ---
 
@@ -12,7 +12,7 @@ All notable changes to DebiOmid are documented here.
 - **Error trap** — a cleanup handler prints a clear failure message and points to the log file if anything goes wrong.
 - **Automated Fcitx5 configuration** — Persian (ISIRI 2901) keyboard layout and Alt+Shift toggle are pre-configured for the real user; no manual GUI setup required after reboot.
 - **XFCE support** — detects XFCE and provides session autostart guidance.
-- **`uninstall.sh`** — interactive script to fully remove all packages and configuration files added by DebiOmid.
+- **`uninstall.sh`** — interactive script to fully remove all packages and configuration files added by DebianOmid.
 - **`.gitignore`** — standard exclusions for editor temp files and OS metadata.
 - **`CONTRIBUTING.md`** — contribution guidelines and bug reporting instructions.
 - **ShellCheck CI** (`.github/workflows/lint.yml`) — automatically lints all shell scripts on every push and pull request.

@@ -1,6 +1,6 @@
-# Contributing to DebiOmid
+# Contributing to DebianOmid
 
-Thank you for your interest in improving DebiOmid!
+Thank you for your interest in improving DebianOmid!
 
 ## How to contribute
 
@@ -18,7 +18,7 @@ Thank you for your interest in improving DebiOmid!
 
 ## Reporting bugs
 
-Open a [GitHub issue](https://github.com/delejos/DebiOmid/issues) and include:
+Open a [GitHub issue](https://github.com/delejos/DebianOmid/issues) and include:
 - Your Debian version (`cat /etc/os-release`)
 - Your desktop environment
 - The full terminal output or the contents of `/var/log/debiomid-install.log`

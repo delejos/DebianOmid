@@ -1,7 +1,7 @@
 <div dir="rtl">
 
-# دبی‌امید (DebiOmid): فارسی‌سازی دبیان ۱۳
-پروژه‌ی «دبی‌امید» (ترکیبی از دبیان و امید) یک اسکریپت حرفه‌ای برای آماده‌سازی و فارسی‌سازی کامل دبیان ۱۳ (Trixie) است. این اسکریپت با استفاده از مخازن رسمی دبیان، فونت‌های باکیفیت، سیستم ورودی مدرن و تقویم جلالی را به سیستم شما اضافه می‌کند.
+# دبیان‌امید (DebianOmid): فارسی‌سازی دبیان ۱۳
+پروژه‌ی «دبیان‌امید» (ترکیبی از دبیان و امید) یک اسکریپت حرفه‌ای برای آماده‌سازی و فارسی‌سازی کامل دبیان ۱۳ (Trixie) است. این اسکریپت با استفاده از مخازن رسمی دبیان، فونت‌های باکیفیت، سیستم ورودی مدرن و تقویم جلالی را به سیستم شما اضافه می‌کند.
 
 ## ویژگی‌ها
 - **تایپوگرافی مدرن:** نصب پکیج‌های رسمی `fonts-vazirmatn` و `fonts-noto-core` برای نمایش بی‌نقص متون فارسی.
@@ -20,7 +20,7 @@
 
 ## نصب
 
-برای نصب دبی‌امید (DebiOmid) روی دبیان ۱۳ (Trixie)، مراحل زیر را دنبال کنید:
+برای نصب دبیان‌امید (DebianOmid) روی دبیان ۱۳ (Trixie)، مراحل زیر را دنبال کنید:
 
 **۱. اجرای اسکریپت نصب**
 
@@ -71,9 +71,9 @@ wget -O- https://raw.githubusercontent.com/delejos/DebianOmid/main/uninstall.sh 
 
 ---
 
-# DebiOmid: Debian 13 (Trixie) Farsi Localization
+# DebianOmid: Debian 13 (Trixie) Farsi Localization
 
-DebiOmid (Debian + Omid/Hope) is a professional post-install script designed to perfectly localize Debian 13 (Trixie) for Farsi-speaking users. It automates the installation of high-quality fonts, input methods, and calendar systems using 100% official Debian repositories.
+DebianOmid (Debian + Omid/Hope) is a professional post-install script designed to perfectly localize Debian 13 (Trixie) for Farsi-speaking users. It automates the installation of high-quality fonts, input methods, and calendar systems using 100% official Debian repositories.
 
 ---
 
