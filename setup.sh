@@ -3,7 +3,7 @@
 # ==========================================================================
 # Script Name: setup.sh (DebiOmid)
 # Description: Professional Farsi Localization for Debian 13 (Trixie)
-# GitHub:      github.com/delejos/DebiOmid
+# GitHub:      github.com/delejos/DebianOmid
 # Author:      delejos
 # Version:     1.1.0
 # ==========================================================================
@@ -38,6 +38,7 @@ fi
 # 2. Debian version check
 # ---------------------------------------------------------------------------
 if [ -f /etc/os-release ]; then
+    # shellcheck source=/dev/null
     . /etc/os-release
     if [ "${ID:-}" != "debian" ]; then
         echo "⚠️  Warning: This script is designed for Debian. Detected OS: ${ID:-unknown} ${VERSION_CODENAME:-}"

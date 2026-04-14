@@ -27,7 +27,7 @@
 ترمینال خود را باز کرده و دستور زیر را اجرا کنید:
 
 ```bash
-wget -O- https://raw.githubusercontent.com/delejos/DebiOmid/main/setup.sh | sudo bash
+wget -O- https://raw.githubusercontent.com/delejos/DebianOmid/main/setup.sh | sudo bash
 ```
 
 > اگر سیستم شما دبیان ۱۳ نباشد، اسکریپت یک هشدار نمایش داده و از شما می‌پرسد که آیا می‌خواهید ادامه دهید یا نه.
@@ -59,7 +59,7 @@ cat /var/log/debiomid-install.log
 ## حذف (Uninstall)
 
 ```bash
-wget -O- https://raw.githubusercontent.com/delejos/DebiOmid/main/uninstall.sh | sudo bash
+wget -O- https://raw.githubusercontent.com/delejos/DebianOmid/main/uninstall.sh | sudo bash
 ```
 
 ---
@@ -99,7 +99,7 @@ DebiOmid (Debian + Omid/Hope) is a professional post-install script designed to 
 Open your terminal and run:
 
 ```bash
-wget -O- https://raw.githubusercontent.com/delejos/DebiOmid/main/setup.sh | sudo bash
+wget -O- https://raw.githubusercontent.com/delejos/DebianOmid/main/setup.sh | sudo bash
 ```
 
 > If your system is not Debian 13 (Trixie), the script will display a warning and ask whether you want to continue.
@@ -131,7 +131,7 @@ cat /var/log/debiomid-install.log
 ## Uninstall
 
 ```bash
-wget -O- https://raw.githubusercontent.com/delejos/DebiOmid/main/uninstall.sh | sudo bash
+wget -O- https://raw.githubusercontent.com/delejos/DebianOmid/main/uninstall.sh | sudo bash
 ```
 
 ---

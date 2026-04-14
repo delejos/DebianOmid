@@ -3,7 +3,7 @@
 # ==========================================================================
 # Script Name: uninstall.sh (DebiOmid)
 # Description: Removes DebiOmid Farsi Localization from Debian 13 (Trixie)
-# GitHub:      github.com/delejos/DebiOmid
+# GitHub:      github.com/delejos/DebianOmid
 # Author:      delejos
 # ==========================================================================
 
